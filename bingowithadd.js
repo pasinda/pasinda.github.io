@@ -105,7 +105,7 @@ function checkWin() {                                 // to clear the toggle col
 var theAd = 0;                                    //Assign 0 to The variable to start dispaying the banner array from the begining 
 var adURL = new Array("joescrabshack.com","coffeecatz.net","pepto-bismol.com");/* create array of URLs to link with the images in cycling                                                                                       banners */
 
-var adImages = new Array("images/banner1.gif","images/banner2.gif","images/banner3.gif");/*Create image array to display as a link to the above                                                                                          urls  */
+var adImages = new Array("banner1.gif","banner2.gif","banner3.gif");/*Create image array to display as a link to the above                                                                                          urls  */
 
 
 function IPinitBannerLink() {
