@@ -1,12 +1,15 @@
 
-        var suits = ["Spades", "Hearts", "Diamonds", "Clubs"];
-        var values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
-        var deck = new Array();
+        var suits = ["Spades", "Hearts", "Diamonds", "Clubs"]; //Array of cards use as a look up table
+        var values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];//Array of possible values that a card can have
+        var deck = new Array();// //variable that keep the card object
         var players = new Array();
         var currentPlayer = 0;
 
         function createDeck()
-        {
+        {                               /* In order to create the deck, we're going to pair up each suit from the 
+                                      array above, with each possible value also from the array declared above. 
+                                      We're going to create a new card object with the corresponding value and suit and we'll be 
+                                      adding that to our empty deck array. */
             deck = new Array();
             for (var i = 0 ; i < values.length; i++)
             {
@@ -58,7 +61,9 @@
             }
         }
 
-        function shuffle()
+        function shuffle()                    /*Select two ramdom locations and switch theire values and continue 
+                                               the same process for 1000 times for make shure the deck is ramdom
+                                                */
         {
             // for 1000 turns
             // switch the values of two random cards
