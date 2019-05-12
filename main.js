@@ -10,10 +10,13 @@
                                       array above, with each possible value also from the array declared above. 
                                       We're going to create a new card object with the corresponding value and suit and we'll be 
                                       adding that to our empty deck array. */
-            deck = new Array();
+                
+            deck = new Array();       // Deck (Array of cards ) contain all 52 cards form the paly card pack.
+                                       //Each card has value in this came since payer tries to get 21 as total to win
             for (var i = 0 ; i < values.length; i++)
             {
-                for(var x = 0; x < suits.length; x++)
+                for(var x = 0; x < suits.length; x++)   /* Each card has havlues including kings, Queens , Jacks and Ace. This app have 
+                                                        given vlaues as 10 for kings, Queens , Jacks and 11 for each Ace. 
                 {
                     var weight = parseInt(values[i]);
                     if (values[i] == "J" || values[i] == "Q" || values[i] == "K")
@@ -26,12 +29,12 @@
             }
         }
 
-        function createPlayers(num)
+        function createPlayers(num)//create two players,the House and the palyer
         {
             players = new Array();
             for(var i = 1; i <= num; i++)
             {
-                var hand = new Array();
+                var hand = new Array();                                           // system keep a track of palyers ID and score
                 var player = { Name: 'Player ' + i, ID: i, Points: 0, Hand: hand };
                 players.push(player);
             }
@@ -46,18 +49,22 @@
                 var div_playerid = document.createElement('div');
                 var div_hand = document.createElement('div');
                 var div_points = document.createElement('div');
-
+                                                                /* Create palyer and the associated elements for the pagewhitch include
+                                                                number of points (Total of the card) to display on th */
                 div_points.className = 'points';
                 div_points.id = 'points_' + i;
                 div_player.id = 'player_' + i;
                 div_player.className = 'player';
                 div_hand.id = 'hand_' + i;
 
-                div_playerid.innerHTML = 'Player ' + players[i].ID;
+                div_playerid.innerHTML = 'Player ' + players[i].ID;         /* Change the content of the elements in Game (Fianl HIML )page
+                                                                               plasers dynamic values*/
                 div_player.appendChild(div_playerid);
                 div_player.appendChild(div_hand);
                 div_player.appendChild(div_points);
-                document.getElementById('players').appendChild(div_player);
+                document.getElementById('players').appendChild(div_player);  /* Append (Modify ) the game Items accoeding to the pay 
+                                                                                , players, points, and the cards . Though the maximum number of payers 
+                                                                                in the game is 2 but the card and the pints always dynamical*/
             }
         }
 
@@ -115,7 +122,7 @@
             var hand = document.getElementById('hand_' + player);
             hand.appendChild(getCardUI(card));
         }
-
+                                                                        
         function getCardUI(card)
         {
             var el = document.createElement('div');
