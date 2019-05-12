@@ -22,49 +22,10 @@ label {
   background-color: red;
 }
 
-.banner-1{
-    font-size: 15px;
-    background-color:peachpuff;
-    width: 100px;
-    position: relative;
-  -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 40s; /* Safari 4.0 - 8.0 */
-  -webkit-animation-iteration-count:infinite ; /* Safari 4.0 - 8.0 */
-  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
-  animation-name: example2;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
- background-color:peachpuff; color: blue;
+
     
 
-}
 
--webkit-keyframes example2 {
- 0%   {left: 0px; top: 0px; }
-  25%  {left: 1100px; top: 0px; }
-    50%{left: 0px; top: 0px;}
-  100%  {left: 1100px; top: 0px;}
-  
-}
- 
-
-@keyframes example2 {
-   0%   {left: 0px; top: 0px; }
-  25%  {left: 1100px; top: 0px; }
-    50%{left: 0px; top: 0px;}
-  100%  {left: 1100px; top: 0px;}
-}
-
-/*second right align ext End of this excercise text*/
-    .note2{
-        font-size: 35px;
-        color: blue;
-        font-family: serif;
-        font-style: italic;
-        text-align: right;
-               
-    }
 /*mark class used to change the color within the paragraph*/
 .red{
     color:red;
