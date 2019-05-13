@@ -52,7 +52,7 @@ function myMove() {
   var pos = 0;
   var id = setInterval(frame, 1);
   function frame() {
-    if (pos == 350) {
+    if (pos == 300) {
       clearInterval(id);
       pos=0;
       myMove();
