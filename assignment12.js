@@ -58,7 +58,7 @@ function myMove() {
       myMove();
     } else {
         
-      pos++; 
+      pos=pos+.01; 
      // elem.style.top = pos + "px"; 
      elem1.style.left = pos + "px"; 
     }
