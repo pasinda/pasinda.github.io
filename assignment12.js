@@ -50,7 +50,7 @@ function showTheTime() {
 function myMove() {
   var elem1 = document.getElementById("animate");   
   var pos = 0;
-  var id = setInterval(frame, 1);
+  var id = setInterval(frame, 90);
   function frame() {
     if (pos == 300) {
       clearInterval(id);
