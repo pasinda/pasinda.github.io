@@ -85,6 +85,13 @@ img {float:left;
                 text-decoration: none;
 
 } 
+
+#leftcolumn a:link{color: #000033;}
+
+#leftcolumn a:visited{color: #344873;}
+
+#leftcolumn a:hover{color:white;}
+
 #leftcolumn ul { list-style-type: none;
                  margin-top: 0;
                  margin-right: 0;
