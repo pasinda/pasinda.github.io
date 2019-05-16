@@ -1,0 +1,121 @@
+body {font-family:<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">;
+      background-image: linear-gradient(skyblue, white); 
+    
+}
+#wrapper { background-color: skyblue; 
+           color: #000066;
+           width: 80%;
+		   margin: auto;
+           min-width:960px;
+           box-shadow: 10px 10px;
+} 
+#leftcolumn { float: left;
+	          width:200px; 
+            background-color: skyblue;
+           
+} 
+#rightcolumn { margin-left: 200px;
+               margin-bottom: auto;    
+               color: #000000;
+              background-color: white;
+             
+} 
+#header{ background-color: #869dc7;
+        color: #00005D; 
+        font-size: 150%; 
+       padding: 0px 0px 0px 0px;
+    
+    
+   
+    
+
+}
+h2 { color: #3399CC; 
+     font-family: Georgia, Times New Roman, serif;
+    text-shadow: 2px 2px;
+        
+}
+    
+h1 { color:white; 
+    background-color:  #000033
+     font-family: arial, sans-serifGeorgia, Times New Roman, serif;
+    text-align: left;
+    background-image: url(sunset.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+        
+}
+
+.content {
+         background-color:skyblue;
+     font-size: 90%;
+          
+} 
+
+
+
+#contact {
+    clear:left
+    
+}
+#floatright { 
+            /* float: right;*/
+}
+img {float:left;
+      
+    padding: 5px;
+    border: 5px;
+    
+  
+
+}
+    
+#footer { background-color: #869dc7;
+         font-size:75%;
+         font-style: italic;
+         text-align: left;
+         background-color: skyblue;
+    border: 0;
+    margin: 0;
+		 /*padding: 10px 20px 20px 155px;*/
+}	
+#leftcolumn a {	/*margin: 30px;*/
+                color: maroon;
+                text-decoration: none;
+
+} 
+#leftcolumn ul { list-style-type: none;
+                 margin-top: 0;
+                 margin-right: 0;
+    
+}
+# rightcolumn ul {overflow: inherit;
+    
+    
+}  
+
+  
+img.a{
+    position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+ -webkit-animation-direction: right; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  animation-direction:right; 
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   { left:0px; top:0px;}
+  100%  {left:860px; top:0px;}
+
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  100%  {left:860px; top:0px;}
+  
+}
